@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /etc/passwd /etc/hosts | tr '\n' ' '
+(echo "/etc/passwd:"; cat /etc/passwd; echo "/etc/hosts:"; cat /etc/hosts) | tr '\n' ' '
