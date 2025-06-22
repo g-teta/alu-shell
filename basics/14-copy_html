@@ -1,8 +1,2 @@
 #!/bin/bash 
-for file in *.html; do
-  # Check if the file actually exists (in case no .html files present)
-  if [[ -f "$file" ]]; then
-    # Copy with -u to update only if source is newer or destination missing
-    cp -u "$file" ..
-  fi
-done
+cp -u *.html ..
